@@ -27,6 +27,7 @@ require_once "header.php";
     <tbody>
       
       <?php  
+      // Seperate string into lines
       $text = explode("\n",$text);
       ?> 
       <div id="time" class="container"> 
@@ -34,9 +35,11 @@ require_once "header.php";
       </div>
       <tr>
       <?php 
+      // Seperate timestamp from rest of data
       $time = array_shift($text);
       foreach($text as $line)
       {
+      // Seperate data and number and insert into table
       $temp = explode(":",$line);
       $no = $temp[0];
       $data = $temp[1];
