@@ -30,7 +30,7 @@ require_once "header.php";
       $text = explode("\n",$text);
       ?> 
       <div id="time" class="container"> 
-        <h2>Time of register: <span class="badge bg-secondary"><?php echo $text[0]; ?></p></span></h2>
+        <h2>Time of register: <span class="badge"><?php echo $text[0]; ?></p></span></h2>
       </div>
       <tr>
       <?php 

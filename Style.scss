@@ -1,32 +1,47 @@
-$darkColor: #031624;
+$blueColor: #318ce7;
+
+body {
+  /*
+  background: rgb(237, 241, 244); 
+  background: #f7f5f3;*/
+  background: #f5f8fa;
+}
 .navbar {
   padding-top: 0;
   height: 75px;
   .container-fluid {
     justify-content: center;
-    background: $darkColor;
+    background: $blueColor;
   }
 }
-footer{
+footer {
+  display: flex;
   margin-top: 50px;
   padding: 20px;
   height: 150px;
-  background: $darkColor;
-  .footerText{
+  background: $blueColor;
+  align-items: center;
+  justify-content: center;
+  .footerText {
     display: flex;
     color: white;
     justify-content: center;
   }
 }
 .nav-link {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 .nav-link,
 .navbar-brand {
   color: white;
 }
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+.navCenter {
+  border-left: 0.1px solid white;
+  border-right: 0.1px solid white;
 }
 a.navbar-brand:hover {
   color: white;
@@ -35,28 +50,77 @@ a.navbar-brand:hover {
   width: 25%;
   justify-content: center;
   margin: auto;
+  font-size: 18px;
 }
 #time {
   display: flex;
-  width: 25%;
   padding: 30px 0 30px 0;
-  justify-content: flex-start;
+  justify-content: center;
   h2 {
     font-size: 20px;
   }
 }
 .badge {
   padding: 18px 10px 5px 10px;
+  background: $blueColor;
 }
-.row{
+.row {
   display: flex;
   justify-content: center;
+  width: 60%;
+  margin: auto;
 }
-.regContainer{
-  .regId, .regval{
+.regContainer {
+  .regId,
+  .regval {
+    width: 50%;
     display: flex;
     justify-content: center;
   }
-  border:1px solid black;
-  margin: 5px;
+  .regId {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .regVal {
+    margin: auto 0 auto 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  background: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 35px;
+  width: 125px;
+  height: 125px;
+  margin: 25px;
+}
+.regContainer:hover {
+  background: lightgray;
+}
+.line {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1500px) {
+  .row {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .row {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .nav-link,
+  .navbar-brand {
+    font-size: 16px;
+  }
 }

@@ -13,15 +13,13 @@ require_once "header.php";
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-
 <body>
-
 
 <?php  
       $text = explode("\n",$text);
       ?> 
       <div id="time" class="container"> 
-        <h2>Time of register: <span class="badge bg-secondary"><?php echo $text[0]; ?></p></span></h2>
+        <h2>Time of register: <span class="badge"><?php echo $text[0]; ?></p></span></h2>
       </div>
       <tr>
       
@@ -35,20 +33,21 @@ require_once "header.php";
           $data = $temp[1];
           ?>
         
-          
-          <div class="regContainer col-xs-5 col-sm-4 col-md-3 col-lg-2">
+          <div class="regContainer col-xs-6 col-sm-4 col-md-3 col-lg-2">
               <div class="regId">
                 <?php echo $no; ?>
               </div>
+              <span class="line"></span>
               <div class="regVal">
                 <?php echo $data; ?>
               </div>
           </div>
         
-          
-          
-        <?php } ?>
-    
+          <?php } ?>
+        </div>
+<?php
+require_once "footer.php";
+?>      
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>       
