@@ -1,0 +1,62 @@
+$darkColor: #031624;
+.navbar {
+  padding-top: 0;
+  height: 75px;
+  .container-fluid {
+    justify-content: center;
+    background: $darkColor;
+  }
+}
+footer{
+  margin-top: 50px;
+  padding: 20px;
+  height: 150px;
+  background: $darkColor;
+  .footerText{
+    display: flex;
+    color: white;
+    justify-content: center;
+  }
+}
+.nav-link {
+  font-size: 1.25rem;
+}
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+a.navbar-brand:hover {
+  color: white;
+}
+#datatable {
+  width: 25%;
+  justify-content: center;
+  margin: auto;
+}
+#time {
+  display: flex;
+  width: 25%;
+  padding: 30px 0 30px 0;
+  justify-content: flex-start;
+  h2 {
+    font-size: 20px;
+  }
+}
+.badge {
+  padding: 18px 10px 5px 10px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+.regContainer{
+  .regId, .regval{
+    display: flex;
+    justify-content: center;
+  }
+  border:1px solid black;
+  margin: 5px;
+}

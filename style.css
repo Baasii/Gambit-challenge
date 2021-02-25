@@ -1,0 +1,96 @@
+.navbar {
+  padding-top: 0;
+  height: 75px;
+}
+
+.navbar .container-fluid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #031624;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  height: 150px;
+  background: #031624;
+}
+
+footer .footerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+a.navbar-brand:hover {
+  color: white;
+}
+
+#datatable {
+  width: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  padding: 30px 0 30px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#time h2 {
+  font-size: 20px;
+}
+
+.badge {
+  padding: 18px 10px 5px 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.regContainer {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.regContainer .regId, .regContainer .regval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Style.css.map */
