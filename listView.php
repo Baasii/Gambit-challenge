@@ -37,6 +37,8 @@ require_once "header.php";
       <?php 
       // Seperate timestamp from rest of data
       $time = array_shift($text);
+      // Remove empty data from end of array
+      $clean = array_pop($text); 
       foreach($text as $line)
       {
       // Seperate data and number and insert into table
