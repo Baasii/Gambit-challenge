@@ -5,7 +5,7 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="index.php">Visual view</a>
               <a class="nav-link navCenter" href="listView.php">List view</a>
-              <a class="nav-link" href="data.txt">Raw data</a>
+              <a class="nav-link" href="http://tuftuf.gambitlabs.fi/feed.txt">Raw data</a>
             </div>
           </div>
         </div>
